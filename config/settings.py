@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'crispy_forms',
+
     'accounts',
     'pages',
 ]
@@ -126,3 +128,4 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 # تعیین صفحه ریدایرکت
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
