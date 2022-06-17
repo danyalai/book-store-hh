@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'accounts',
     'pages',
+    'books',
 ]
 
 MIDDLEWARE = [
@@ -127,5 +128,7 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 # تعیین صفحه ریدایرکت
-
+# crispy_forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# Email config
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
